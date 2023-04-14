@@ -24,8 +24,14 @@ function sendEmail(){
       To : document.getElementById("email").value,
       From : 'lyssveardsfaegtning.co@gmail.com',
       Subject : "Velkommen til Lyssværdsfægtning",
-      Body : "Hej " + document.getElementById("name").value 
-      + " Din tilmelding til Lysværdsfægtning er nu blevet bekræftet"
+      Body : "Hej " + document.getElementById("name").value + " " + document.getElementById("last-name").value
+      + " Din tilmelding til Lysværdsfægtning er nu blevet bekræftet." +
+      " "+"Email:" + " " + document.getElementById("email").value,
+           Attachments : [
+        {
+          name : "Fight.jpg",
+          path : "https://i.postimg.cc/3r28CCQQ/Fight.jpg"
+        }]
     }).then(
       message => alert(message)
     )};
