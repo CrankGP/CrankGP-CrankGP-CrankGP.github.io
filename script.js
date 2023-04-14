@@ -15,17 +15,17 @@ tabs.forEach(tab => {
   })
 })
 
+
 function sendEmail(){
   Email.send({
       Host : "smtp.elasticemail.com",
-      Username : "dkcreepercraft@gmail.com",
-      Password : "E21638BB876D432387A6DB2780B702D82C21",
+      Username : "lyssveardsfaegtning.co@gmail.com",
+      Password : "F156533190833C30750385AD22613BFD6B28",
       To : document.getElementById("email").value,
-      From : 'dkcreepercraft@gmail.com',
+      From : 'lyssveardsfaegtning.co@gmail.com',
       Subject : "Velkommen til Lyssværdsfægtning",
       Body : "Hej " + document.getElementById("name").value 
       + " Din tilmelding til Lysværdsfægtning er nu blevet bekræftet"
-  }).then(
-    message => alert(message)
-  );
-  }
+    }).then(
+      message => alert(message)
+    )};
