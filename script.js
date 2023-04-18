@@ -25,7 +25,7 @@ function sendEmail(){
       From : 'lyssveardsfaegtning.co@gmail.com',
       Subject : "Velkommen til Lyssværdsfægtning",
       Body : "Hej " + document.getElementById("name").value + " " + document.getElementById("last-name").value
-      + " Din tilmelding til Lysværdsfægtning er nu blevet bekræftet." +
+      + " Dit barn, " + document.getElementById("child-name").value +" "+ document.getElementById("age-name").value +", "+ "tilmelding til Lysværdsfægtning er nu blevet bekræftet." +
       " "+"Email:" + " " + document.getElementById("email").value,
            Attachments : [
         {
