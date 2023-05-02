@@ -1,3 +1,6 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 @font-face {
   font-family: 'Starjedi';
   src: url(fonts/Starjedi.ttf);
@@ -225,3 +228,15 @@ padding-top: 10px;
 .homebutton:focus {
 background-color:  rgb(53, 139, 53);}
 
+.video-container{
+  position: relative;
+  width: 90%;
+  max-width: 1270px;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  background-color: black;
+}
+.video{
+  width: 100%;
+}
