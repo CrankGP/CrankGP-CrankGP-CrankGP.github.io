@@ -1,6 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: 'Starjedi';
   src: url(fonts/Starjedi.ttf);
@@ -19,7 +20,7 @@
 
 body {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   background-image: url("Star_Background.jpg");
   height: 100svh;
   width: 100%;
@@ -157,7 +158,7 @@ box-shadow: 0 0 15px 0 var(--color);
 margin-top: 60px;
 padding: 60px 30px;
 width: 100%;
-max-width: 1500px;
+max-width: 1000px;
 min-width: 730px;
 min-height: 600px;
 border-radius: 20px;
@@ -165,13 +166,6 @@ padding-top: 10px;
 padding-bottom: 20px;
 
 
-}
-.fight_image{
-  display: flex;
-  width: 100%;
-  height: 500px;
-  max-width: 100%;
-  object-fit: cover;
 }
 
 
@@ -229,15 +223,17 @@ padding-top: 10px;
 .homebutton:focus {
 background-color:  rgb(53, 139, 53);}
 
-.video-container{
+.hidden-msg {
+  display: none;
+}
+
+.video{
   position: relative;
-  width: 90%;
-  max-width: 1270px;
+  width: 100%;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   margin-inline: auto;
-  background-color: black;
-}
-.video{
-  width: 100%;
+  padding-top: 20px;
+
 }
