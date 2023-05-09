@@ -23,7 +23,6 @@ var Email = { send: function (a)
       function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) 
       { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
 
-
 function sendEmail(){
   Email.send({
       Host : "smtp.elasticemail.com",
@@ -33,13 +32,11 @@ function sendEmail(){
       From : 'lyssveardsfaegtning.co@gmail.com',
       Subject : "Velkommen til Lyssværdsfægtning",
       Body : "Hej " + document.getElementById("name").value + " " + document.getElementById("last-name").value
-      + " Dit barn, " + document.getElementById("child-name").value +" "+ document.getElementById("age").value +", "+ "tilmelding til Lysværdsfægtning er nu blevet bekræftet." +
-      " "+"Email:" + " " + document.getElementById("email").value,
+      + " Din tilmelding til Lysværdsfægtning er nu blevet bekræftet." +
+      " "+"Email:" + " "+ " " + document.getElementById("child-name").value + " " + document.getElementById("age").value + " " + document.getElementById("email").value,
            Attachments : [
         {
           name : "Fight.jpg",
           path : "https://i.postimg.cc/3r28CCQQ/Fight.jpg"
         }]
-    }).then(
-      message => alert(message)
-    )};
+    })};
