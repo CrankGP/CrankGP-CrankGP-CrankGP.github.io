@@ -39,4 +39,6 @@ function sendEmail(){
           name : "Fight.jpg",
           path : "https://i.postimg.cc/3r28CCQQ/Fight.jpg"
         }]
-    })};
+      }).then(
+      message => alert(message = "Tak for indsende en tilmelding. Check din mail")
+    )};
