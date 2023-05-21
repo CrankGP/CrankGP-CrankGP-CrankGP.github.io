@@ -56,7 +56,7 @@
       <div class="login-container">
         <h1 class="title">Lysværds fægtning</h1>
         <h1 class="login-title">Tilmeldning</h1>
-        <form class="form" onsubmit="sendEmail(); reset(); return false;">
+        <form class="form" onsubmit="sendEmail(); reset(); openPopup(); return false;">
        
     <div class="input-group">
         <label for="name">Fornavn*</label>
@@ -91,6 +91,10 @@
     <input type="checkbox" class="checkbox" id="tos" name="TOS" value="tos" required> <p class="textbox">Ved at klikke denne box acceptere jeg eller en guardian
       at jeg har læst og acceptere terms of service af Lyssværds Fægtning. </p>
      <button type="submit" class="login-button" id="submit">Send</button>
+      <div class="popup" id="popup">
+      <h2>Tak for indsende en tilmelding. Check din mail</h2>
+      <button type="button" onclick="closePopup()">Ok</button>
+     </div>
     </form>
     </div>
   </div>
