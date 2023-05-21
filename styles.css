@@ -168,7 +168,6 @@ padding-bottom: 20px;
 
 }
 
-
 .aboutbox {
   --color: rgba(216, 158, 12, 0.819);
 background-color: var(--color);
@@ -178,22 +177,51 @@ width: 100%;
 max-width: 900px;
 max-height: 900px;
 border-radius: 20px;
-margin-top: 100px;
+margin-top: 50px;
 padding-top: 10px;
 }
-.link{
+
+.about_image_AF{
+  display: block;
+  width: 500px;
+  height: 150px;
+}
+.link_AF{
+  display: flex;
+  max-width: 10%;
+  height: 150px;
+  object-fit: contain;
+  margin-left: 350px;
+}
+
+.about_image_TF{
+  display: block;
+  width: 500px;
+  height: 150px;
+
+}
+
+.link_TF{
   display: flex;
   max-width: 20%;
   height: 150px;
   object-fit: contain;
-  margin: auto;
+  margin-left: 250px;
 }
 
-.about_image{
+.about_image_SS{
   display: block;
-  width: 100%;
+  width: 500px;
+  height: 150px;
+}
+
+.link_SS{
+  display: flex;
+  max-width: 20%;
   height: 150px;
   object-fit: contain;
+  margin-left: 180px;
+}
 
 }
 .checkbox {
