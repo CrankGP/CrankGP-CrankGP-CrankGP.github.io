@@ -255,3 +255,38 @@ background-color:  rgb(53, 139, 53);}
 .start-button:focus {
   background-color:  rgb(53, 139, 53);  
 }
+
+.popup{
+  --color: rgb(216, 158, 12);
+  background-color: var(--color);
+  box-shadow: 0 0 15px 0 var(--color);
+  padding: 40px 30px;
+  width: 400px;
+  border-radius: 20px;
+  margin-top: 100px;
+  padding-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.popup button{
+  padding: .5em 1em;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  background-color: rgba(53, 139, 53, 0.65);
+  border-radius: .25em;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
