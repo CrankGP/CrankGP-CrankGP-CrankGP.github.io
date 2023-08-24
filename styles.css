@@ -2,10 +2,7 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Starjedi';
-  src: url(fonts/Starjedi.ttf);
-}
+
 [data-tab-content] {
   display: none;
 }
@@ -19,7 +16,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url("Star_Background.jpg");
+  background-image: url("AAU.jpg");
   height: 100svh;
   width: 100%;
   min-width: 1000px;
@@ -37,24 +34,24 @@ body {
   max-width: 100%;
   padding-left: 500px;
   padding-right: 500px;
-  --color: rgba(216, 158, 12, 0.819);
+  --color: rgba(170, 170, 170, 0.928);
   background-color: var(--color);
   box-shadow: 0 0 15px 0 var(--color);
-  font-family: 'Starjedi';
   font-size: medium;
 }
 
 .tab {
   cursor: pointer;
   padding: 20px;
+  padding-top: 6%
 }
 
 .tab.active {
-  background-color: rgba(216, 158, 12, 0.819);
+  background-color: rgba(145, 144, 144, 0.928);
 }
 
 .tab:hover {
-  background-color: rgba(233, 171, 14, 0.819);
+  background-color: rgba(189, 189, 189, 0.928);
 }
 
 .tab-content {
@@ -64,12 +61,12 @@ body {
 
 .login-container {
    
-  --color: rgba(216, 158, 12, 0.819);
+  --color: rgba(3, 17, 77, 0.928);
    background-color: var(--color);
    box-shadow: 0 0 15px 0 var(--color);
    padding: 40px 30px;
    width: 80%;
-   max-width: 600px;
+   max-width: 1055px;
    border-radius: 20px;
    margin-top: 50px;
    padding-top: 10px;
@@ -77,13 +74,13 @@ body {
 }
 .login-title {
   margin: 0;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-family: 'Starjedi';
 }
 .title {
   margin: 0;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-family: 'Starjedi';
   font-size: 40px;
@@ -100,14 +97,14 @@ body {
   gap: 7px;
 }
 .input-group label {
-  color:black;
+  color:rgb(253, 253, 253);
   font-weight: lighter;
 }
 .input-group input {
   font-size: 1.25rem;
   padding: .5rem;
   border-radius: .25rem;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: lighter;
 }
 
@@ -115,7 +112,7 @@ body {
   padding: .5em 1em;
   font-size: 1.5rem;
   font-weight: lighter;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: rgba(53, 139, 53, 0.65);
   border-radius: .25em;
   outline: none;
@@ -128,14 +125,14 @@ background-color:  rgb(53, 139, 53);
 
 .home-title {
   margin: 0;
-  color: rgba(0, 0, 0, 0.819);
+  color: rgba(255, 255, 255, 0.819);
   text-align: center;
   font-family: 'Starjedi';
   font-size: 40px;
 }
 .home-h2 {
   margin: 0;
-  color: rgba(0, 0, 0, 0.819);
+  color: rgba(255, 255, 255, 0.819);
   font-family: 'Starjedi';
   text-align: center;
   font-size: 25px;
@@ -143,14 +140,14 @@ background-color:  rgb(53, 139, 53);
 }
 .paragraph {
   margin: 0;
-  color: rgba(0, 0, 0, 0.819);
+  color: rgba(255, 255, 255, 0.819);
   font-family:Arial, Helvetica, sans-serif;
   font-size: large;
   font-weight: bold;
 }
 
 .homebox {
---color: rgba(216, 158, 12, 0.819);
+--color: rgba(3, 17, 77, 0.928);
 background-color: var(--color);
 box-shadow: 0 0 15px 0 var(--color);
 margin-top: 60px;
@@ -167,7 +164,7 @@ padding-bottom: 20px;
 }
 
 .aboutbox {
-  --color: rgba(216, 158, 12, 0.819);
+  --color: rgba(3, 17, 77, 0.928);
 background-color: var(--color);
 box-shadow: 0 0 15px 0 var(--color);
 padding: 40px 30px;
@@ -227,7 +224,7 @@ padding-top: 10px;
 }
 .textbox {
   margin-top: auto;
-  color: rgba(0, 0, 0, 0.819);
+  color: rgba(255, 255, 255, 0.819);
   font-family:Arial, Helvetica, sans-serif;
   font-size: large;
   font-weight: bold;
@@ -237,7 +234,7 @@ padding-top: 10px;
   padding: .5em 1em;
   font-size: 1.5rem;
   font-weight: lighter;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: rgba(53, 139, 53, 0.65);
   border-radius: .25em;
   outline: none;
@@ -266,7 +263,7 @@ background-color:  rgb(53, 139, 53);}
   padding: .5em 1em;
   font-size: 1.5rem;
   font-weight: lighter;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: rgba(53, 139, 53, 0.65);
   border-radius: .25em;
   outline: none;
@@ -280,37 +277,56 @@ background-color:  rgb(53, 139, 53);}
   background-color:  rgb(53, 139, 53);  
 }
 
-.popup{
-  --color: rgb(216, 158, 12);
-  background-color: var(--color);
-  box-shadow: 0 0 15px 0 var(--color);
-  padding: 40px 30px;
-  width: 400px;
-  border-radius: 20px;
-  margin-top: 100px;
-  padding-top: 10px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.1);
-  text-align: center;
-  visibility: hidden;
-  transition: transform 0.4s, top 0.4s;
+
+.about_image_TB{
+  display: block;
+  width: 998px;
+  height: 336px;
+  padding-top: 20px;
+
 }
 
-.popup button{
-  padding: .5em 1em;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  color: rgb(0, 0, 0);
-  background-color: rgba(53, 139, 53, 0.65);
-  border-radius: .25em;
-  outline: none;
-  cursor: pointer;
-  margin-top: 20px;
+.Downloadsbox {
+  --color: rgba(3, 17, 77, 0.928);
+background-color: var(--color);
+box-shadow: 0 0 15px 0 var(--color);
+padding: 40px 30px;
+width: 100%;
+max-width: 900px;
+max-height: 900px;
+border-radius: 20px;
+margin-top: 50px;
+padding-top: 10px;
 }
-.open-popup{
-  visibility: visible;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+
+.about_image_BBB {
+  display: block;
+  width: 680px;
+  height: 454px;
+  padding-top: 20px;
+  padding-left: 160px;
+}
+.about_image_BB{
+  padding-left: 100px;
+  cursor: pointer;
+}
+.about_image_TBF {
+  padding-left: 50px;
+  cursor: pointer;
+}
+.about_image_DD{
+  padding-left: 50px;
+  cursor: pointer;
+}
+.about_image_AB{
+  display: flex;
+  width: 102px;
+  height: 104px;
+}
+.about_image_VS {
+  display: block;
+  width: 500px;
+  height: 200px;
+  padding-top: 20px;
+  padding-left: 150px;
 }
