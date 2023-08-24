@@ -12,10 +12,13 @@
 <body>
  
 
-  <ul class="tabs">
+  <ul class="tabs">   
+    <img class="about_image_AB" src="AAU I.png" alt="">
     <li data-tab-target="#home" class="active tab">Forside</li>
-    <li data-tab-target="#pricing" class="tab">Tilmeldning</li>
-    <li data-tab-target="#about" class="tab">om os</li>
+    <li data-tab-target="#pricing" class="tab">Program</li>
+    <li data-tab-target="#about" class="tab">Bøger</li>
+    <li data-tab-target="#downloads" class="tab">Downloads</li>
+ 
     </ul>
 <div class="full-screen-container"></div>
   <div class="tab-content"> 
@@ -23,78 +26,55 @@
     <div id="home" data-tab-content class="active">
       
       <div class="homebox">
-      <h1 class="home-title">Lysværds Fægtning</h1>
-      <h2 class="home-h2">Hvad er Lysværds Fægtning?</h2>
-      <p class="paragraph">Vi har alle fantaseret om at fægte med lysværd, men har nok altid tænkt det ikke var muligt.
+      <h1 class="home-title">Velkommen BAIT 2023!</h1>
+      <h2 class="home-h2">Set-Up dag!</h2>
+      <p class="paragraph"> Dette er en lille hjemmeside jeg har lavet til jer, for i kan lettere begynde på Universitetet. 
+      Her kan i se programmet for tutor periode, hente PDF versioner af de bøger som i muligvis for brug for og finde links til de programmer i kommer til at bruge.
+        </p>  
+        <h1 class="home-title"> Bøger</h1>
+        <a class="link_TF" data-tab-target="#about"><img class="about_image_BB" src="physiology-books-biology-books-notes-fsc-notes-papers-pdf.jpg" alt=""> </a>
+        <h1 class="home-title"> Program</h1>
+        <a class="link_SS" data-tab-target="#pricing"><img class="about_image_TBF"src="Tutor Billede.PNG" alt=""></a>
+        <h1 class="home-title"> Downloads</h1>
+        <a class="link_AF"  data-tab-target="#downloads"><img class="about_image_DD" src="Download-Icon.png" alt=""></a>
+      
 
-        Men ikke længere! I samarbejde med Trygfonden, Silversabre og Aalborg Fægte Klub kan man nu lære at fægte med lysværd!
-
-        Se denne Video om Lyssværds Fægtning fra Silver Sabres Combat Academy
-        </p>
-          <video class="video" src="assets/Silver Sabres Combat Academy(720p).mp4" controls> </video>
        
-        <button class="start-button" data-tab-target="#pricing" class="tab" >Tilmeld Dig Her</button>
+
     </div>
     </div>
     <div id="about" data-tab-content>
       <div class="aboutbox">
        
-      <h1 class="home-title">om os</h1>
-      <h2 class="home-h2">Hvem er vi?</h2>
-      <p class="paragraph">Lysværds Fægtning er lavet i et partnerskab med Aalborg Fægteklub, Silversabre, og Trygfonden. 
+      <h1 class="home-title">Bøger</h1>
+      <h2 class="home-h2">Hent PDF versioner her!</h2>
+      <p class="paragraph">Vi ved alle at bøger er fucking dyre, så derfor har jeg lavet et Google Drev med alle de bøger i muligvis for brug for under studiet. Bookmark drevet, for jeg kommer til at opdatere det løbende gennem semestrene. Klik på Billedet for linket</p>
+        <a class="link_BB" href="https://drive.google.com/drive/u/1/folders/1Lk06XTz01w8OF20GjhoGBp46VRxaVacb"><img class="about_image_BBB" src="physiology-books-biology-books-notes-fsc-notes-papers-pdf.jpg" alt=""></a>
 
-        Målet er at give børn og unge en mulighed for at blive introduceret til en anderledes sport som fægtning, på en mere børnevenlig metode.</p>
-        <a class="link_AF" href="https://www.aalborgfaegteklub.dk/"><img class="about_image_AF" src="AalborgFægte club.png" alt=""></a>
-        <a class="link_TF" href="https://www.tryghed.dk/"><img class="about_image_TF" src="Trygfonden.png" alt=""> </a>
-        <a class="link_SS" href="https://silver-sabres.com/"><img class="about_image_SS"src="Silversabre.png" alt=""></a>
        
       </div>
     </div>
 
     <div id="pricing" data-tab-content>
       <div class="login-container">
-        <h1 class="title">Lysværds fægtning</h1>
-        <h1 class="login-title">Tilmeldning</h1>
-        <form class="form" onsubmit="sendEmail(); reset(); openPopup(); return false;">
+        <h1 class="title">Program</h1>
+        <h1 class="login-title">Program for September</h1>
+        <p class="paragraph">Her kan i se programmet for September Tutor perioden. Programmet ligger også på FB side </p> 
+        <a class="link_TB" href="https://www.facebook.com/groups/informationsteknologi.aau.2022/"><img class="about_image_TB" src="Tutor Billede.PNG" alt=""> </a>
        
-    <div class="input-group">
-        <label for="name">Fornavn*</label>
-        <input type="name" name="name"
-        id="name" required>
-       
-    </div>
-    <div class="input-group">
-        <label for="last-name">Efternavn*</label>
-        <input type="last-name" last-name="last-name"
-        id="last-name" required>
-       
-    </div> 
-    <div class="input-group">
-      <label for="child-name">Barnets navn*</label>
-      <input type="child-name" last-name="child-name"
-      id="child-name" required>
-     
-  </div>
-  <div class="input-group">
-    <label for="age">Barnets Alder*</label>
-    <input type="age" last-name="age"
-    id="age" required>
-   
-</div>
-
-    <div class="input-group success">
-            <label for="email">Email*</label>
-            <input type="email" name="email"
-            id="email" required>
-    </div>
-    <input type="checkbox" class="checkbox" id="tos" name="TOS" value="tos" required> <p class="textbox">Ved at klikke denne box acceptere jeg eller en guardian
-      at jeg har læst og acceptere terms of service af Lyssværds Fægtning. </p>
-     <button type="submit" class="login-button" id="submit">Send</button>
-     <div class="popup" id="popup">
-      <h2>Tak for indsende en tilmelding. Check din mail</h2>
-      <button type="button" onclick="closePopup()">Ok</button>
      </div>
-    </form>
+
+     
+       
+       
+     </div>
+
+     <div id="downloads" data-tab-content>
+      <div class="Downloadsbox">
+        <h1 class="home-title"> Downloads</h1>
+        <p class="paragraph"> Her kan i hente de visse programmer som i muligvis kommer til at bruge. Indtil videre er det kun VS Code men den er også meget vigtig</p>
+        <h1 class="home-title">VS Code</h1>
+        <a class="link_SS" href="https://code.visualstudio.com/download"><img class="about_image_VS" src="Visual_Studio_Code_1.35_icon.svg.png" alt=""></a>
     </div>
   </div>
 </body>
